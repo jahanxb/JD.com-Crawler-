@@ -11,12 +11,12 @@ def sendEmail():
     server.ehlo()
     #server.starttls()
     #server.ehlo()
-    server.login('jahanxbkhan@yandex.com','istudyiniet1')
+    server.login('email@email.com','pass')
     subject = 'Iphone XS price autoBot'
     body = str(nochinese).strip()+ "  Price: RMB ( "+ str(price) +" )"  
     #msg = f"Subject: {subject}\n\n{body}"
     msg = str(subject + " " + body) 
-    server.sendmail('jahanxbkhan@yandex.com','jahanxbkhan@hotmail.com',msg)
+    server.sendmail('send','recieve',msg)
     print(" Email Sent !!")
     server.quit()
 
